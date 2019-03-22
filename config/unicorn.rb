@@ -42,16 +42,3 @@ after_fork do |_server, _worker|
 end
 
 
-upstream app_server {
-  server unix:/var/www/merukari2/shared/tmp/sockets/unicorn.sock;
-}
-
-root /var/www/merukari2/current/public;
-
-
-location ^~ /assets/ {
-    gzip_static on;
-    expires max;
-    add_header Cache-Control public;
-    root   /var/www/merukari2/current/public;
-  }

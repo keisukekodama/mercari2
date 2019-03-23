@@ -13,4 +13,4 @@
  *= require_tree .
  *= require_self
  */
-@import "_mercari";
+@import "model/_mercari";

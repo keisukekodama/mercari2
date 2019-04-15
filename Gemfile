@@ -60,6 +60,7 @@ gem 'haml-rails'
 gem 'erb2haml'
 gem 'bootstrap-sass'
 gem 'bootstrap'
+gem 'devise'
 
 group :production do
   gem 'unicorn', '5.4.1'
